@@ -8,12 +8,15 @@ public class Lab3Exercises {
 		JFrame myFrame = new JFrame("Lexdyel Mendez");
 		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 		
-		int width = (int) dim.getWidth() /2 ;
-		int height =(int)  dim.getHeight() /2;
+		int width = (int) dim.getWidth();
+		int height =(int)  dim.getHeight();
 		
 		myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		myFrame.setSize(200, 200);
-		myFrame.setLocation(width - myFrame.getWidth()/2, height - myFrame.getHeight()/2);
+		myFrame.setLocation(width/2 - myFrame.getWidth()/2, height/2 - myFrame.getHeight()/2);
+        MyPanelClass myPanel = new MyPanelClass();
+        myFrame.getContentPane().add(myPanel);
 		myFrame.setVisible(true);
+		
 	}
 }
