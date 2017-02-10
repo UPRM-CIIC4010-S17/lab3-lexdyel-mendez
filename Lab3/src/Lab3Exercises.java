@@ -12,7 +12,7 @@ public class Lab3Exercises {
 		int height =(int)  dim.getHeight();
 		
 		myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		myFrame.setSize(200, 200);
+		myFrame.setSize(230, 160);
 		myFrame.setLocation(width/2 - myFrame.getWidth()/2, height/2 - myFrame.getHeight()/2);
         MyPanelClass myPanel = new MyPanelClass();
         myFrame.getContentPane().add(myPanel);
